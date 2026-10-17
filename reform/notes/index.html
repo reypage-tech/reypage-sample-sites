@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>制作メモ｜しおり住まい工房（サンプルサイト）</title>
+<meta name="description" content="しおり住まい工房（架空のリフォーム会社）の制作メモ。設計の意図、測定値、素材の出所。">
+<meta name="robots" content="noindex">
+<link rel="canonical" href="https://reypage.pages.dev/reform/notes/">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 16 16%22%3E%3Crect width=%2216%22 height=%2216%22 fill=%22%2324476B%22/%3E%3C/svg%3E">
+<link rel="stylesheet" href="../style.css">
+<link rel="stylesheet" href="../fonts.css">
+</head>
+<body>
+<a class="skip" href="#main">本文へ移動</a>
+<aside class="sample-bar" aria-label="この見本について">サンプルサイト（自主制作）：説明ページです。会社・住所・施工事例・金額は架空のものです。</aside>
+<header class="header"><div class="header__inner"><a class="logo" href="../"><span class="logo__main" style="font-size:20px">しおり住まい工房</span></a><a class="btn btn--cta" href="../" style="margin-left:auto">サイトに戻る</a></div></header>
+<main id="main" class="notes"><div class="wrap wrap--narrow">
+<p class="notes__back"><a href="../">← しおり住まい工房のサイトに戻る</a></p>
+<h1>しおり住まい工房 制作メモ</h1>
+<p class="notes__lead">しおり住まい工房は、ホームページ制作の見本として作った架空のリフォーム会社です。実在の会社ではなく、お客様から頼まれた案件でもありません。社名・住所・施工事例・金額・従業員数は、すべて見本のために決めた値です。このメモには、誰に向けて、どんな理由で組み立てたかと、何をどう測ったかを書いています。</p>
+
+<h2>想定した依頼主と利用者</h2>
+<p>依頼主として思い浮かべたのは、地域で長く続く従業員9名ほどの工務店です。見に来るのは、キッチンや浴室の交換、間取りの変更を考え始めたばかりの人。相場、工期、どんな順番で進むのか、営業を受けずに相談できるのかを知りたいはずだと考えました。</p>
+<p>題材は、ココナラの公開依頼の分類から選んでいます。直近90日の、店舗や小規模事業者の新規制作・リニューアル95件のうち、会社・事務所のサイトが23件、来店予約型が19件でした（2026年10月9日の集計）。この見本は前者、もう一つのピラティスの見本は後者にあたります。</p>
+
+<h2>設計の方針</h2>
+<ul>
+<li>工事ごとの工期と費用の目安を、表にして最初から出しました。「工事一式」とまとめると、比べたい人が離れてしまうと考えたためです。ただし、表の金額は見本として置いた値で、実際の相場を調べた根拠はありません。実在の会社の制作では、その会社の見積実績に差し替えます。</li>
+<li>施工事例の1件目は、写真ではなく、工事前と後の間取り図で見せています。素材写真を並べると、施工していない家を施工したように見せてしまうからです。2件目のキッチンは素材写真で、施工事例の見出しのすぐ下に「掲載写真は素材写真です」と書きました。</li>
+<li>電話番号と郵便番号は載せていません。適当に書いた番号が、実在の会社のものと重なるのを避けるためです。相談はフォームで受け、電話を希望する人にはこちらから折り返す、という前提で作っています。</li>
+<li>藍をブランドの色、木の茶を補助の色にして、橙のボタンは「相談する」場所にだけ使いました。スマホでは、画面の下に「費用の目安」と「見積りを相談する」を固定し、最初の画面と相談フォームの欄では隠します。</li>
+<li>お客様の声は載せていません。実在しない人の感想を作ってしまうことになるため、「差し替え枠」と明記した空きを置きました。</li>
+<li>紫から青へのグラデーション、絵文字、影つきカードの連続、英語の飾り見出し、丸いボタンは使わない、と先に決めています。どのサイトにもある型に見えてしまうからです。</li>
+</ul>
+<h3>見た目で工夫したところ</h3>
+<p>「費用の目安」と「会社案内」の上端には、大工の物差しを思わせる目盛りの罫線を引きました。間取り図は、画面に入ったときに撤去する壁の点線が先に見え、そのあとで「工事後」が現れます。OSの「視差効果を減らす」設定がオンの場合、動きは止まります。</p>
+<p>WordPress版のテーマも、同じ見た目で別に作りました。お客様が自分で更新するのは、施工事例とお知らせだけの想定です。動作は手元の確認環境だけで見ていて、レンタルサーバーでは確かめていません。</p>
+
+<h2>計測結果</h2>
+<div class="notes__scroll" tabindex="0" role="region" aria-label="測定値の表（横にスクロールできます）"><table>
+<caption class="visually-hidden">Lighthouse と axe の測定値</caption>
+<thead><tr><th scope="col">項目</th><th scope="col">値</th><th scope="col">補足</th></tr></thead>
+<tbody>
+<tr><th scope="row">Lighthouse 性能（モバイル）</th><td data-label="値">96</td><td data-label="補足">3回の中央値。最初に表示される主要な画像（LCP）は 2.4 秒、レイアウトのずれ（CLS）は 0、操作の止まり（TBT）は 0ms</td></tr>
+<tr><th scope="row">アクセシビリティ</th><td data-label="値">100</td><td data-label="補足">Lighthouse の項目。別に axe-core（WCAG 2.0/2.1 A・AA とベストプラクティス）で、幅390と1280のどちらも違反 0 件（10月12日）</td></tr>
+<tr><th scope="row">ベストプラクティス</th><td data-label="値">100</td><td data-label="補足"></td></tr>
+<tr><th scope="row">SEO</th><td data-label="値">66</td><td data-label="補足">減点は <code>noindex</code> の1項目だけです。見本のあいだは検索に出さない設定にしています。同じページから noindex だけを外して測ると 100（公開前の確認用。実際に外すのは公開の判断のあと）</td></tr>
+<tr><th scope="row">ページの転送量</th><td data-label="値">283 KB</td><td data-label="補足">HTML・CSS・書体・画像の合計（初回表示）</td></tr>
+<tr><th scope="row">横スクロール</th><td data-label="値">なし</td><td data-label="補足">幅360・768・1440で、ページ全体のはみ出しを確認</td></tr>
+</tbody></table></div>
+<p class="src">測定日：2026年10月15日。Google Chrome 154（ヘッドレス）、Lighthouse 12.8.2（モバイル設定・通信と処理速度は模擬）、axe-core 4.14。自分のPC上のサーバーで配信して測ったため、実際のサーバーや回線では値が変わります。</p>
+<p>数値は、公開前の自己点検のために測ったものです。最初の主要な画像の表示（LCP）は、Google が目安とする2.5秒以内です。前の版では届いていませんでした（2.6秒）。測ってみると、時間の大半は画像の読み込みではなく、最初の描画の前の計算でした。効いたのは、書体の指定から端末にない和文書体の名前（Hiragino・Yu Gothic など）を外したこと、画面の外の欄の描画を後回しにしたこと（content-visibility）、書体の読み込みを描画のあとに回したことです。CSSを本文に埋め込む試しは、かえって遅くなったのでやめました。測定は通信が遅い設定で、圧縮をかけない簡易サーバーから配信して行っています。HTMLの検査には html-validate を使いました。</p>
+
+<h2>今後の課題</h2>
+<ul>
+<li>実案件ではありません。実際の現場の取材も、お客様とのやりとりもしていません。</li>
+<li>施工事例は2件とも架空です。写真8枚は、住宅・工事中の室内・道具・素材を撮った素材写真で、この会社が手がけた現場ではありません。人が写るのは「工事中のこと」の2枚（電動ドリルを構える腕と手元、床材を貼る手元）だけで、どちらも顔は写っていません。写真には、すべて「素材写真（イメージ）」か「イメージ写真（素材）」と添えています。写真は、制作者が各素材サイトの写真ページを自分のブラウザで開き、公式のダウンロードボタンで保存したものです（2026年10月）。</li>
+<li>お客様の声や施工件数の代わりに、「対応している工事（ほかへご紹介する工事も）」「工事中のこと」と、よくある質問を3つ足しました。どれも作った実績ではなく、工務店が最初に説明する内容です。</li>
+<li>お客様の声、スタッフの写真、建設業許可の番号はありません（差し替え枠か、「見本のため省略」と書いています）。</li>
+<li>ページは1枚だけで、施工事例の個別ページやお知らせの一覧は、静的版にはありません（WordPress版にはあります）。</li>
+</ul>
+
+<h2>素材の出所とライセンス</h2>
+<div class="notes__scroll" tabindex="0" role="region" aria-label="素材の出所とライセンスの表（横にスクロールできます）"><table>
+<caption class="visually-hidden">素材の出所とライセンス</caption>
+<thead><tr><th scope="col">素材</th><th scope="col">使った場所</th><th scope="col">出所</th><th scope="col">ライセンス</th></tr></thead>
+<tbody>
+<tr><th scope="row">Zen Kaku Gothic New（400・500・700）</th><td data-label="使った場所">本文・見出し</td><td data-label="出所"><a href="https://github.com/google/fonts/tree/main/ofl/zenkakugothicnew">Google Fonts のリポジトリ</a>。使う文字だけに減らした woff2</td><td data-label="ライセンス">SIL Open Font License 1.1（<a href="../fonts/OFL_ZenKakuGothicNew.txt">全文</a>）</td></tr>
+<tr><th scope="row">Shippori Mincho（SemiBold）</th><td data-label="使った場所">社名・番号</td><td data-label="出所"><a href="https://github.com/google/fonts/tree/main/ofl/shipporimincho">Google Fonts のリポジトリ</a>。同じく文字を減らした woff2</td><td data-label="ライセンス">SIL Open Font License 1.1（<a href="../fonts/OFL_ShipporiMincho.txt">全文</a>）</td></tr>
+<tr><th scope="row">リビングの写真（Clay Banks 撮影）</th><td data-label="使った場所">最初の画面</td><td data-label="出所"><a href="https://unsplash.com/photos/7pvC_d2iXSE">Unsplash</a></td><td data-label="ライセンス"><a href="https://unsplash.com/license">Unsplash License</a>：商用利用・改変が可、クレジット表記は不要</td></tr>
+<tr><th scope="row">キッチンの写真（Dulkimso Hakim Santoso 撮影）</th><td data-label="使った場所">施工事例2件目</td><td data-label="出所"><a href="https://unsplash.com/photos/fdgzbUqUYVI">Unsplash</a>。家電のロゴが写らない下部を切り抜き、コンロのガラスに残っていたメーカー名の刻字は周りの色で塗って消しました</td><td data-label="ライセンス"><a href="https://unsplash.com/license">Unsplash License</a>：商用利用・改変が可、クレジット表記は不要</td></tr>
+<tr><th scope="row">素材の見本の写真（Declan Sun 撮影）</th><td data-label="使った場所">「工事と費用の目安」</td><td data-label="出所"><a href="https://unsplash.com/photos/apJMCEBNucw">Unsplash</a></td><td data-label="ライセンス"><a href="https://unsplash.com/license">Unsplash License</a>：商用利用・改変が可、クレジット表記は不要</td></tr>
+<tr><th scope="row">古い台所の写真（Se. Tsuchiya 撮影）</th><td data-label="使った場所">「会社案内」</td><td data-label="出所"><a href="https://unsplash.com/photos/gm7OwXLhJFY">Unsplash</a></td><td data-label="ライセンス"><a href="https://unsplash.com/license">Unsplash License</a>：商用利用・改変が可、クレジット表記は不要</td></tr>
+<tr><th scope="row">和室の写真（Gül Işık 撮影）</th><td data-label="使った場所">「対応している工事」</td><td data-label="出所"><a href="https://www.pexels.com/photo/35680935/">Pexels</a></td><td data-label="ライセンス"><a href="https://www.pexels.com/license/">Pexels License</a>：商用利用・改変が可、クレジット表記は不要</td></tr>
+<tr><th scope="row">工事中の室内の写真（ボブ 撮影）</th><td data-label="使った場所">「工事中のこと」</td><td data-label="出所"><a href="https://www.pakutaso.com/20200706202post-28720.html">ぱくたそ</a></td><td data-label="ライセンス"><a href="https://www.pakutaso.com/userpolicy.html">ぱくたそ利用規約</a>：商用利用・加工が可、クレジット表記は不要</td></tr>
+<tr><th scope="row">電動ドリルを構える腕と手元（Ono Kosuki 撮影）</th><td data-label="使った場所">「工事中のこと」</td><td data-label="出所"><a href="https://www.pexels.com/photo/5973900/">Pexels</a>。顔は写っていません</td><td data-label="ライセンス"><a href="https://www.pexels.com/license/">Pexels License</a>：商用利用・改変が可、クレジット表記は不要</td></tr>
+<tr><th scope="row">床材を貼る手元（K 撮影）</th><td data-label="使った場所">「工事中のこと」</td><td data-label="出所"><a href="https://www.pexels.com/photo/4263067/">Pexels</a>。顔は写っていません</td><td data-label="ライセンス"><a href="https://www.pexels.com/license/">Pexels License</a>：商用利用・改変が可、クレジット表記は不要</td></tr>
+<tr><th scope="row">アイコン（浴室・床と壁・手すり）</th><td data-label="使った場所">「よくご相談いただく工事」</td><td data-label="出所">Google Material Symbols（bathtub・format_paint・accessible）。<a href="../ICONS.txt">ICONS.txt</a></td><td data-label="ライセンス">Apache License 2.0（<a href="../LICENSE_Apache-2.0.txt">全文</a>）</td></tr>
+<tr><th scope="row">ロゴ・残りのアイコン・間取り図・目盛りの罫線</th><td data-label="使った場所">全体</td><td data-label="出所">この見本のために作成（SVG と CSS）</td><td data-label="ライセンス">—</td></tr>
+<tr><th scope="row">SNS共有用の画像（og.jpg）</th><td data-label="使った場所">共有時のプレビュー</td><td data-label="出所">このサイトの最初の画面のスクリーンショット。中の写真は上と同じ</td><td data-label="ライセンス">同上</td></tr>
+</tbody></table></div>
+
+<h2>修正履歴</h2>
+<ul>
+<li>2026年10月12日：架空の市名が、実在する作品の市名と重なっていたため、「千草ヶ丘市」「橘ヶ浜町」「白梅野市」に置き換えました。あわせて、公開前の仕上げ（共有用画像の絶対URL化、canonical の追加、読み上げ用の領域名の付け直し）、施工事例への「架空のサンプル事例」の表示、差し替え枠、目盛りの罫線と間取り図の動き、この制作メモの追加を行いました。</li>
+<li>2026年10月15日：写真を8枚にし、「工事中のこと」に工事中の室内と職人の手元の写真を足しました。</li>
+</ul>
+
+</div></main>
+<footer class="footer"><div class="wrap"><p class="footer__logo">しおり住まい工房</p><p class="footer__disclaimer">このサイトはサンプルサイト（自主制作）です。会社・住所・施工事例・金額・人物は架空のもので、実在のものとは関係ありません。</p></div></footer>
+</body></html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>WordPress版（管理画面での更新）｜しおり住まい工房（サンプルサイト）</title>
+<meta name="robots" content="noindex">
+<link rel="canonical" href="https://reypage.pages.dev/reform/wordpress/">
+<link rel="stylesheet" href="../fonts.css">
+<link rel="stylesheet" href="../style.css">
+<style>
+.wpd{max-width:960px;margin:0 auto;padding:32px 20px 56px}
+.wpd h1{font-size:1.6rem;margin:8px 0 12px}.wpd h2{font-size:1.25rem;margin:40px 0 12px}
+.wpd figure{margin:16px 0 28px}.wpd img{width:100%;height:auto;border:1px solid #ddd;border-radius:4px}
+.wpd figcaption{font-size:.88rem;color:#555;margin-top:6px}
+.wpd table{border-collapse:collapse;width:100%;font-size:.92rem}.wpd th,.wpd td{border-bottom:1px solid #e3ded5;padding:8px 6px;text-align:left;vertical-align:top}
+.wpd .try{background:#f4f1ec;border-radius:6px;padding:18px 20px;margin:24px 0}
+.wpd .note{font-size:.85rem;color:#555}
+</style>
+</head>
+<body>
+<aside class="sample-bar" aria-label="この見本について">サンプルサイト（自主制作）：会社・人物・住所・金額は架空のものです。<a href="../">サイトに戻る</a></aside>
+<main class="wpd">
+<h1>管理画面での更新（WordPressテーマ版）</h1>
+<p>このサンプルサイトには、WordPressの自作テーマ版もあります。施工事例とお知らせは、お客様が管理画面から追加・修正でき、保存するとサイトに反映されます。有料のプラグインは使っていません。</p>
+
+<h2>施工事例の一覧</h2>
+<figure><img src="img/wp-works-list.webp" width="1366" height="900" alt="管理画面の施工事例の一覧" loading="lazy"><figcaption>左のメニューに「施工事例」「お知らせ」を置き、迷わず開けるようにしています。</figcaption></figure>
+
+<h2>施工事例の編集</h2>
+<figure><img src="img/wp-works-edit.webp" width="1366" height="900" alt="施工事例の編集画面。工事の種類・建物・工期・費用・地域の入力欄" loading="lazy"><figcaption>工事の種類・建物・工期・費用・地域は決まった入力欄に入れます。サイトの表の形は崩れません。この画面では「地域」を変更しています。</figcaption></figure>
+
+<h2>更新後のサイト表示</h2>
+<figure><img src="img/wp-site-after.webp" width="1366" height="900" alt="更新後のトップページの施工事例。地域が変更されている" loading="lazy"><figcaption>保存すると、トップページの施工事例に変更が反映されます。</figcaption></figure>
+
+<h2>編集者のアカウントの管理画面</h2>
+<figure><img src="img/wp-editor-menu.webp" width="1366" height="900" alt="編集者でログインした管理画面。左のメニューはダッシュボード・お知らせ・施工事例・メディア・プロフィール" loading="lazy"><figcaption>お客様にお渡しする「編集者」のアカウントで開いた画面です。設定や外観のメニューは出ません。</figcaption></figure>
+
+<h2>テーマの内容</h2>
+<table>
+<tr><th>施工事例</th><td>カスタム投稿タイプ（works）。写真はアイキャッチ画像、表の項目はカスタムフィールド</td></tr>
+<tr><th>お知らせ</th><td>標準の「投稿」を「お知らせ」という名前で表示</td></tr>
+<tr><th>お客様のアカウント</th><td>「編集者」の権限。左のメニューはダッシュボード・お知らせ・施工事例・メディア・プロフィールだけになります</td></tr>
+<tr><th>使用技術</th><td>PHP、HTML、CSS、WordPressのブロックエディタ（有料プラグインなし）</td></tr>
+</table>
+
+<div class="try">
+<h2 style="margin-top:0">操作を試せるデモ</h2>
+<p>ブラウザの中で動くWordPress（WordPress Playground）で、このテーマを開けます。登録は要りません。管理画面にログインした状態で始まり、閉じると内容は消えます。</p>
+<p><a class="btn btn--cta" href="https://playground.wordpress.net/?blueprint-url=https://reypage.pages.dev/wp/blueprint.json" target="_blank" rel="noopener">WordPress版を開く（Playground）</a></p>
+<p class="note">開くまで10秒ほどかかります。</p>
+
+</div>
+</main>
+</body>
+</html>

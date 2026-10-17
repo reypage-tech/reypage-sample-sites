@@ -1,0 +1,1 @@
+このフォルダのアイコンのうち、浴室・床壁・手すりの3つは Google Material Symbols（Apache License 2.0）です。ライセンス全文は LICENSE_Apache-2.0.txt。
