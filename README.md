@@ -50,7 +50,7 @@ WordPressテーマ版のソースは、別のリポジトリ `reypage-wp-theme-r
 ビルドの手順はありません。フォルダをそのまま開けば表示できます。リンクは相対パスなので、簡単なWebサーバーを使うとページ間の移動も公開中のサイトと同じように確かめられます。
 
 ```sh
-git clone https://github.com/reypage/reypage-sample-sites.git
+git clone https://github.com/reypage-tech/reypage-sample-sites.git
 cd reypage-sample-sites
 python3 -m http.server 8000
 ```
