@@ -2,16 +2,14 @@
 
 Reypage（レイページ）が自主制作したホームページのサンプルサイト3件と、その一覧ページのソースです。店名・会社名・住所・料金・人物はすべて架空で、実在の店舗や会社とは関係ありません。
 
-公開中のサイト：https://reypage.pages.dev/
-
 ## サンプルの内容
 
-| フォルダ | 業種 | 構成 | 公開URL |
-|---|---|---|---|
-| `pilates/` | ピラティススタジオ「ノギク」 | 1ページ構成（料金・時間割・体験の流れ・アクセス・予約フォーム）と制作メモ | https://reypage.pages.dev/pilates/ |
-| `reform/` | リフォーム会社「しおり住まい工房」 | 1ページ構成（施工事例・費用の目安・ご相談の流れ・会社案内・見積りフォーム）、制作メモ、WordPress版の説明ページ | https://reypage.pages.dev/reform/ |
-| `b2b/` | 金属加工の町工場「汐凪精機」 | 6ページ構成（トップ・事業内容・会社概要・採用情報・お問い合わせ・制作メモ） | https://reypage.pages.dev/b2b/ |
-| `pilates/map-check/` | Googleマップ診断の見本 | 店舗のGoogleマップの情報を確認する作業のサンプル | https://reypage.pages.dev/pilates/map-check/ |
+| フォルダ | 業種 | 構成 |
+|---|---|---|
+| `pilates/` | ピラティススタジオ「ノギク」 | 1ページ構成（料金・時間割・体験の流れ・アクセス・予約フォーム）と制作メモ |
+| `reform/` | リフォーム会社「しおり住まい工房」 | 1ページ構成（施工事例・費用の目安・ご相談の流れ・会社案内・見積りフォーム）、制作メモ、WordPress版の説明ページ |
+| `b2b/` | 金属加工の町工場「汐凪精機」 | 6ページ構成（トップ・事業内容・会社概要・採用情報・お問い合わせ・制作メモ） |
+| `pilates/map-check/` | Googleマップ診断の見本 | 店舗のGoogleマップの情報を確認する作業のサンプル |
 
 各サイトの制作メモ（`notes/`）に、設計の考え方、写真の出所、表示速度やアクセシビリティの測定結果を載せています。
 
@@ -120,7 +118,7 @@ Source of three self-initiated sample websites by Reypage, plus the index page. 
 - `reform/` – a local renovation company, one-page site; a WordPress theme version lives in the `reypage-wp-theme-reform` repository
 - `b2b/` – a small machining shop, six-page corporate site with recruitment and contact pages
 
-Built with plain HTML, CSS and JavaScript, responsive, with subsetted self-hosted web fonts (OFL) and WebP images. Live demo: https://reypage.pages.dev/
+Built with plain HTML, CSS and JavaScript, responsive, with subsetted self-hosted web fonts (OFL) and WebP images.
 
 To view locally, run `python3 -m http.server 8000` in the repository root and open http://localhost:8000/.
 
